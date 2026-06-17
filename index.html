@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Password Generator and Checker</title>
+    <link rel="stylesheet" href="pass.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Password Generator & Checker</h1>
+
+        <div class="password-box">
+            <input type="password" id="password" placeholder="Generate Password">
+            <button id="toggleBtn">Show</button>
+        </div>
+
+        <p id="strengthText">Password Strength: </p>
+        <p id="breachText" style="font-weight: bold; margin-top: 5px;"></p>
+
+        <div class="buttons">
+            <button id="generateBtn">Generate Password</button>
+            <button id="optimizeBtn" style="background-color: #2e7d32;">Optimize Password</button>
+            <button id="copyBtn">Copy Password</button>
+        </div>
+
+        <div class="rules">
+            <h3>NIST Security Controls Met:</h3>
+            <ul>
+                <li><strong>Control IA-5:</strong> Minimum 8 characters long.</li>
+                <li><strong>Control IA-5(1):</strong> Allows long passphrases with spaces.</li>
+                <li><strong>Control IA-5(1):</strong> Checks against a list of compromised passwords.</li>
+                <li><strong>Control IA-5 (Remediation):</strong> Actively optimizes weak input into strong, high-entropy alternatives.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="pass.js"></script>
+
+</body>
+</html>
